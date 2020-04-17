@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 4190147657946381672}
   - component: {fileID: 271132666870378926}
   - component: {fileID: 4190147657946381673}
+  - component: {fileID: 3129236356311268592}
   m_Layer: 9
   m_Name: Offline Player RB
   m_TagString: Player
@@ -207,12 +208,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCam: {fileID: 4410769175773230114}
   orientation: {fileID: 4190147657946381679}
+  sensitivity: 50
   moveSpeed: 4500
   maxSpeed: 20
   grounded: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 2048
+  canJump: 0
+  canCrouch: 0
   counterMovement: 0.2
   maxSlopeAngle: 35
   slideForce: 400
@@ -250,6 +254,23 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &3129236356311268592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190147657946381678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e778f8f7f2446d3b85563bf8eaa866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceAmount: 500
+  ballLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  targetCamera: {fileID: 4410769175829882238}
 --- !u!1 &4190147658145500920
 GameObject:
   m_ObjectHideFlags: 0
